@@ -1,59 +1,74 @@
-🐍 Python Projects Collection
+Voice Assistant - Jarvis 🎙️🤖
 
-A collection of Python projects ranging from beginner-friendly scripts to advanced applications.
-This repository is designed to practice Python programming concepts, explore real-world use cases, and build hands-on projects covering areas like automation, data structures, algorithms, web scraping, APIs, and AI-based applications.
+A Python-based voice assistant named Jarvis that listens to your commands and performs actions like opening websites, searching the web, playing YouTube songs, and fetching news.
 
 🚀 Features
 
-Beginner to advanced Python projects.
+🎧 Voice Recognition: Listens to user commands using speech_recognition.
 
-Covers automation, algorithms, data handling, and APIs.
+🗣️ Text-to-Speech: Responds using pyttsx3.
 
-Includes voice assistants, web tools, and small utilities.
+🌐 Open Websites: Say open <website> (e.g., "open google").
 
-Clean, modular, and well-documented code.
+🔍 Search Queries: Say search <your query> (e.g., "search artificial intelligence").
 
+🎶 Play Songs on YouTube: Say play <song name> (e.g., "play Shape of You").
+
+📑 Quick Info: Ask what is <topic> (e.g., "what is machine learning").
+
+📰 Get Latest News: Just say news.
 
 🛠️ Requirements
 
-Python 3.7+
+Make sure you have Python 3.7+ installed and then install dependencies:
 
-Dependencies may vary per project. Each project folder will include its own requirements.txt.
-
-To install dependencies, navigate to the project folder and run:
-
-pip install -r requirements.txt
-
-📌 Included Projects
-Project	Description
-Jarvis Voice Assistant	A voice-controlled assistant that can open websites, search Google, play YouTube songs, and fetch news.
-(Upcoming)	More projects will be added soon – automation, games, and data structure implementations.
-▶️ How to Run a Project
-
-Navigate to the project folder:
-
-cd Project-Name
+pip install speechrecognition pyttsx3 pywhatkit requests
 
 
-Install dependencies:
+Also, install PyAudio (required for microphone input):
 
-pip install -r requirements.txt
+pip install pyaudio
+** all required things that need to be installed are listed in "requirement" file** , go through it...
 
+▶️ How to Run
 
-Run the project:
+Clone or download this repository.
+
+Run the script:
 
 python main.py
 
-✨ Future Plans
 
-Add projects on data structures & algorithms.
+Say "Jarvis" to activate the assistant.
 
-More automation tools.
+Give your command (e.g., "open YouTube", "play Believer", "search Python tutorial").
 
-Small games & AI-based apps.
+📌 Example Commands
 
-Hands-on web scraping and API projects.
+"Jarvis open google" → Opens Google.
 
-🤝 Contributing
+"Jarvis play despacito" → Plays the song on YouTube.
 
-Contributions are welcome! Feel free to fork this repo, improve the code, or add new projects, and submit a pull request.
+"Jarvis search weather today" → Searches Google.
+
+"Jarvis what is AI" → Opens a Google search about AI.
+
+"Jarvis news" → Opens Google News.
+
+⚠️ Notes
+
+Requires a working microphone.
+
+Internet connection is needed for search, news, and YouTube playback.
+
+Can be extended with more commands (e.g., weather API, reminders, etc.).
+
+✨ Future Improvements
+
+Add weather reports via API.
+
+Integrate with email & calendar.
+
+Control system apps (calculator, notepad, etc.).
+
+Smarter natural language processing.
